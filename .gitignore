@@ -16,6 +16,9 @@
 # next.js
 /.next/
 /out/
+/public/images/projects/*-480.webp
+/public/images/projects/*-800.webp
+/public/images/projects/*-1200.webp
 
 # production
 /build

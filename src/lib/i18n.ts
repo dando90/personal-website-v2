@@ -1,3 +1,5 @@
+import type { ProjectId } from "@/lib/project-assets";
+
 export const locales = ["en", "it", "es"] as const;
 
 export type Locale = (typeof locales)[number];
@@ -68,33 +70,43 @@ export const copy = {
     },
     projects: {
       tagsLabel: "Technologies and topics",
+      sourceCode: "Source code",
+      liveDemo: "Live demo",
       eyebrow: "AREAS OF WORK",
       title: "From intelligent systems to useful products.",
       description:
         "A snapshot of the problems and technologies I’m focusing on. More detailed project case studies will be added as they are ready.",
       items: [
         {
+          id: "counterJavaScript" satisfies ProjectId,
           number: "01",
           title: "Counter JavaScript",
+          imageAlt: "Placeholder artwork for the Counter JavaScript project",
           description:
             "A simple counter application built with JavaScript to practice the fundamentals of the language.",
           tags: ["JavaScript", "DOM Manipulation"],
         },
         {
+          id: "bookFinder" satisfies ProjectId,
           number: "02",
           title: "Book Finder",
+          imageAlt: "Placeholder artwork for the Book Finder project",
           description: "A web application focused on searching for books.",
           tags: ["Web Development"],
         },
         {
+          id: "phpRestApi" satisfies ProjectId,
           number: "03",
           title: "PHP REST API",
+          imageAlt: "Placeholder artwork for the PHP REST API project",
           description: "A backend project for building a REST API using PHP.",
           tags: ["PHP", "REST API", "Backend"],
         },
         {
+          id: "reactNyTimesClone" satisfies ProjectId,
           number: "04",
           title: "React NY Times Clone",
+          imageAlt: "Placeholder artwork for the React NY Times Clone project",
           description:
             "A recreation of The New York Times website built with React.",
           tags: ["React", "JavaScript", "Frontend"],
@@ -134,6 +146,7 @@ export const copy = {
     },
     footer: {
       note: "Designed and built with care.",
+      socialLinks: "Social links",
       backToTop: "Back to top",
     },
   },
@@ -174,34 +187,44 @@ export const copy = {
     },
     projects: {
       tagsLabel: "Tecnologie e argomenti",
+      sourceCode: "Codice sorgente",
+      liveDemo: "Demo online",
       eyebrow: "AREE DI LAVORO",
       title: "Dai sistemi intelligenti a prodotti utili.",
       description:
         "Una panoramica dei problemi e delle tecnologie su cui mi sto concentrando. Aggiungerò casi studio più dettagliati man mano che saranno pronti.",
       items: [
         {
+          id: "counterJavaScript" satisfies ProjectId,
           number: "01",
           title: "Counter JavaScript",
+          imageAlt: "Immagine segnaposto del progetto Counter JavaScript",
           description:
             "Una semplice applicazione contatore sviluppata con JavaScript per mettere in pratica i fondamenti del linguaggio.",
           tags: ["JavaScript", "DOM Manipulation"],
         },
         {
+          id: "bookFinder" satisfies ProjectId,
           number: "02",
           title: "Book Finder",
+          imageAlt: "Immagine segnaposto del progetto Book Finder",
           description: "Un'applicazione web dedicata alla ricerca di libri.",
           tags: ["Web Development"],
         },
         {
+          id: "phpRestApi" satisfies ProjectId,
           number: "03",
           title: "PHP REST API",
+          imageAlt: "Immagine segnaposto del progetto PHP REST API",
           description:
             "Un progetto backend per la creazione di un'API REST utilizzando PHP.",
           tags: ["PHP", "REST API", "Backend"],
         },
         {
+          id: "reactNyTimesClone" satisfies ProjectId,
           number: "04",
           title: "React NY Times Clone",
+          imageAlt: "Immagine segnaposto del progetto React NY Times Clone",
           description:
             "Una riproduzione del sito The New York Times realizzata utilizzando React.",
           tags: ["React", "JavaScript", "Frontend"],
@@ -241,6 +264,7 @@ export const copy = {
     },
     footer: {
       note: "Progettato e realizzato con cura.",
+      socialLinks: "Profili social",
       backToTop: "Torna all’inizio",
     },
   },
@@ -282,34 +306,44 @@ export const copy = {
     },
     projects: {
       tagsLabel: "Tecnologías y temas",
+      sourceCode: "Código fuente",
+      liveDemo: "Demo en vivo",
       eyebrow: "ÁREAS DE TRABAJO",
       title: "De los sistemas inteligentes a productos útiles.",
       description:
         "Una muestra de los problemas y tecnologías en los que me estoy enfocando. Añadiré casos de estudio más detallados cuando estén listos.",
       items: [
         {
+          id: "counterJavaScript" satisfies ProjectId,
           number: "01",
           title: "Counter JavaScript",
+          imageAlt: "Imagen provisional del proyecto Counter JavaScript",
           description:
             "Una sencilla aplicación de contador desarrollada con JavaScript para poner en práctica los fundamentos del lenguaje.",
           tags: ["JavaScript", "Manipulación del DOM"],
         },
         {
+          id: "bookFinder" satisfies ProjectId,
           number: "02",
           title: "Book Finder",
+          imageAlt: "Imagen provisional del proyecto Book Finder",
           description: "Una aplicación web centrada en la búsqueda de libros.",
           tags: ["Desarrollo web"],
         },
         {
+          id: "phpRestApi" satisfies ProjectId,
           number: "03",
           title: "PHP REST API",
+          imageAlt: "Imagen provisional del proyecto PHP REST API",
           description:
             "Un proyecto backend para crear una API REST utilizando PHP.",
           tags: ["PHP", "REST API", "Backend"],
         },
         {
+          id: "reactNyTimesClone" satisfies ProjectId,
           number: "04",
           title: "React NY Times Clone",
+          imageAlt: "Imagen provisional del proyecto React NY Times Clone",
           description:
             "Una recreación del sitio web The New York Times desarrollada con React.",
           tags: ["React", "JavaScript", "Frontend"],
@@ -349,6 +383,7 @@ export const copy = {
     },
     footer: {
       note: "Diseñado y desarrollado con cuidado.",
+      socialLinks: "Redes sociales",
       backToTop: "Volver arriba",
     },
   },

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img">
+  <rect width="1600" height="1000" fill="#ecfeff"/>
+  <circle cx="1430" cy="800" r="300" fill="#cffafe"/>
+  <rect x="250" y="165" width="1100" height="670" rx="40" fill="#fff" stroke="#dce3ec" stroke-width="8"/>
+  <text x="330" y="280" fill="#64748b" font-family="Arial, sans-serif" font-size="32" font-weight="700" letter-spacing="5">BOOK FINDER</text>
+  <rect x="330" y="330" width="940" height="92" rx="20" fill="#f7f8fa" stroke="#dce3ec" stroke-width="5"/>
+  <circle cx="1195" cy="376" r="24" fill="none" stroke="#06b6d4" stroke-width="9"/>
+  <path d="m1213 394 24 24" stroke="#06b6d4" stroke-width="9" stroke-linecap="round"/>
+  <rect x="390" y="515" width="205" height="245" rx="18" fill="#2563eb"/>
+  <rect x="615" y="490" width="205" height="270" rx="18" fill="#06b6d4"/>
+  <rect x="840" y="525" width="205" height="235" rx="18" fill="#172033"/>
+  <rect x="1065" y="505" width="145" height="255" rx="18" fill="#93c5fd"/>
+  <path d="M435 570h115m-115 34h90m-90 34h105M662 550h110m-110 34h120m-120 34h82M882 585h120m-120 34h90m-90 34h110M1094 570h85m-85 34h72" stroke="#fff" stroke-opacity=".75" stroke-width="9" stroke-linecap="round"/>
+  <text x="800" y="925" text-anchor="middle" fill="#64748b" font-family="Arial, sans-serif" font-size="28">PROJECT PREVIEW PLACEHOLDER</text>
+</svg>

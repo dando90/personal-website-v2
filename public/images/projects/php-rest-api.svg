@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img">
+  <rect width="1600" height="1000" fill="#101b2d"/>
+  <circle cx="1440" cy="80" r="300" fill="#172b47"/>
+  <circle cx="145" cy="900" r="290" fill="#14253d"/>
+  <text x="180" y="190" fill="#b9c4d5" font-family="Arial, sans-serif" font-size="32" font-weight="700" letter-spacing="5">PHP REST API</text>
+  <rect x="180" y="255" width="1240" height="120" rx="24" fill="#172033" stroke="#334155" stroke-width="5"/>
+  <circle cx="250" cy="315" r="16" fill="#06b6d4"/>
+  <text x="300" y="328" fill="#67e8f9" font-family="monospace" font-size="38">GET</text>
+  <text x="430" y="328" fill="#f8fafc" font-family="monospace" font-size="38">/api/v1/resources</text>
+  <path d="M800 415v90m0 0H460v72m340-72h340v72" fill="none" stroke="#2563eb" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="260" y="580" width="400" height="165" rx="26" fill="#172033" stroke="#334155" stroke-width="5"/>
+  <rect x="940" y="580" width="400" height="165" rx="26" fill="#172033" stroke="#334155" stroke-width="5"/>
+  <circle cx="325" cy="662" r="22" fill="#06b6d4"/>
+  <circle cx="1005" cy="662" r="22" fill="#2563eb"/>
+  <text x="375" y="677" fill="#f8fafc" font-family="Arial, sans-serif" font-size="34">COURSES</text>
+  <text x="1055" y="677" fill="#f8fafc" font-family="Arial, sans-serif" font-size="34">SUBJECTS</text>
+  <text x="800" y="920" text-anchor="middle" fill="#94a3b8" font-family="Arial, sans-serif" font-size="28">PROJECT PREVIEW PLACEHOLDER</text>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img">
+  <rect width="1600" height="1000" fill="#eff6ff"/>
+  <circle cx="1360" cy="140" r="250" fill="#dbeafe"/>
+  <circle cx="180" cy="870" r="220" fill="#e0f2fe"/>
+  <rect x="350" y="170" width="900" height="660" rx="42" fill="#fff" stroke="#dce3ec" stroke-width="8"/>
+  <text x="430" y="275" fill="#64748b" font-family="Arial, sans-serif" font-size="32" font-weight="700" letter-spacing="5">COUNTER JAVASCRIPT</text>
+  <line x1="430" y1="325" x2="1170" y2="325" stroke="#dce3ec" stroke-width="5"/>
+  <circle cx="800" cy="570" r="160" fill="#eff6ff"/>
+  <text x="800" y="625" text-anchor="middle" fill="#172033" font-family="Arial, sans-serif" font-size="180" font-weight="700">04</text>
+  <circle cx="535" cy="780" r="48" fill="#2563eb"/>
+  <path d="M513 780h44" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="1065" cy="780" r="48" fill="#2563eb"/>
+  <path d="M1043 780h44m-22-22v44" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+  <text x="800" y="925" text-anchor="middle" fill="#64748b" font-family="Arial, sans-serif" font-size="28">PROJECT PREVIEW PLACEHOLDER</text>
+</svg>
