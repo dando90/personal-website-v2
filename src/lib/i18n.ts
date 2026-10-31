@@ -48,7 +48,8 @@ export const copy = {
       areasLabel: "Areas of focus",
       eyebrow: "SOFTWARE · AI · INTELLIGENT SYSTEMS",
       title: "Building intelligent software.",
-      description: "AI-powered applications, LLM systems and agentic workflows.",
+      description:
+        "AI-powered applications, LLM systems and agentic workflows.",
       projects: "View projects",
       about: "About me",
       tags: ["LLM & RAG", "AI Agents", "Software Engineering"],
@@ -74,24 +75,29 @@ export const copy = {
       items: [
         {
           number: "01",
-          title: "AI-powered applications",
+          title: "Counter JavaScript",
           description:
-            "Turning language-model capabilities into clear, practical software experiences.",
-          tags: ["AI Applications", "Product Thinking"],
+            "A simple counter application built with JavaScript to practice the fundamentals of the language.",
+          tags: ["JavaScript", "DOM Manipulation"],
         },
         {
           number: "02",
-          title: "LLM & RAG systems",
-          description:
-            "Connecting language models to relevant external knowledge through retrieval workflows.",
-          tags: ["LLMs", "Retrieval", "RAG"],
+          title: "Book Finder",
+          description: "A web application focused on searching for books.",
+          tags: ["Web Development"],
         },
         {
           number: "03",
-          title: "Agentic workflows",
+          title: "PHP REST API",
+          description: "A backend project for building a REST API using PHP.",
+          tags: ["PHP", "REST API", "Backend"],
+        },
+        {
+          number: "04",
+          title: "React NY Times Clone",
           description:
-            "Designing task-oriented systems that coordinate models, tools and software services.",
-          tags: ["AI Agents", "Integrations"],
+            "A recreation of The New York Times website built with React.",
+          tags: ["React", "JavaScript", "Frontend"],
         },
       ],
       github: "Explore my GitHub repositories",
@@ -110,7 +116,11 @@ export const copy = {
         },
         {
           title: "Engineering mindset",
-          items: ["Systems thinking", "Technical problem solving", "Integration"],
+          items: [
+            "Systems thinking",
+            "Technical problem solving",
+            "Integration",
+          ],
         },
       ],
     },
@@ -171,24 +181,30 @@ export const copy = {
       items: [
         {
           number: "01",
-          title: "Applicazioni basate sull’AI",
+          title: "Counter JavaScript",
           description:
-            "Trasformare le capacità dei modelli linguistici in esperienze software chiare e pratiche.",
-          tags: ["Applicazioni AI", "Product Thinking"],
+            "Una semplice applicazione contatore sviluppata con JavaScript per mettere in pratica i fondamenti del linguaggio.",
+          tags: ["JavaScript", "DOM Manipulation"],
         },
         {
           number: "02",
-          title: "Sistemi LLM e RAG",
-          description:
-            "Collegare i modelli linguistici a conoscenze esterne pertinenti attraverso workflow di retrieval.",
-          tags: ["LLM", "Retrieval", "RAG"],
+          title: "Book Finder",
+          description: "Un'applicazione web dedicata alla ricerca di libri.",
+          tags: ["Web Development"],
         },
         {
           number: "03",
-          title: "Workflow agentici",
+          title: "PHP REST API",
           description:
-            "Progettare sistemi orientati a un compito che coordinano modelli, strumenti e servizi software.",
-          tags: ["Agenti AI", "Integrazioni"],
+            "Un progetto backend per la creazione di un'API REST utilizzando PHP.",
+          tags: ["PHP", "REST API", "Backend"],
+        },
+        {
+          number: "04",
+          title: "React NY Times Clone",
+          description:
+            "Una riproduzione del sito The New York Times realizzata utilizzando React.",
+          tags: ["React", "JavaScript", "Frontend"],
         },
       ],
       github: "Esplora i repository su GitHub",
@@ -207,7 +223,11 @@ export const copy = {
         },
         {
           title: "Approccio ingegneristico",
-          items: ["Pensiero sistemico", "Problem solving tecnico", "Integrazione"],
+          items: [
+            "Pensiero sistemico",
+            "Problem solving tecnico",
+            "Integrazione",
+          ],
         },
       ],
     },
@@ -242,7 +262,8 @@ export const copy = {
       areasLabel: "Áreas de enfoque",
       eyebrow: "SOFTWARE · IA · SISTEMAS INTELIGENTES",
       title: "Desarrollo software inteligente.",
-      description: "Aplicaciones de IA, sistemas LLM y flujos de trabajo agénticos.",
+      description:
+        "Aplicaciones de IA, sistemas LLM y flujos de trabajo agénticos.",
       projects: "Ver proyectos",
       about: "Sobre mí",
       tags: ["LLM y RAG", "Agentes de IA", "Ingeniería de software"],
@@ -268,24 +289,30 @@ export const copy = {
       items: [
         {
           number: "01",
-          title: "Aplicaciones basadas en IA",
+          title: "Counter JavaScript",
           description:
-            "Convertir las capacidades de los modelos de lenguaje en experiencias de software claras y prácticas.",
-          tags: ["Aplicaciones IA", "Product Thinking"],
+            "Una sencilla aplicación de contador desarrollada con JavaScript para poner en práctica los fundamentos del lenguaje.",
+          tags: ["JavaScript", "Manipulación del DOM"],
         },
         {
           number: "02",
-          title: "Sistemas LLM y RAG",
-          description:
-            "Conectar modelos de lenguaje con conocimiento externo relevante mediante flujos de recuperación.",
-          tags: ["LLM", "Recuperación", "RAG"],
+          title: "Book Finder",
+          description: "Una aplicación web centrada en la búsqueda de libros.",
+          tags: ["Desarrollo web"],
         },
         {
           number: "03",
-          title: "Flujos de trabajo agénticos",
+          title: "PHP REST API",
           description:
-            "Diseñar sistemas orientados a tareas que coordinan modelos, herramientas y servicios de software.",
-          tags: ["Agentes de IA", "Integraciones"],
+            "Un proyecto backend para crear una API REST utilizando PHP.",
+          tags: ["PHP", "REST API", "Backend"],
+        },
+        {
+          number: "04",
+          title: "React NY Times Clone",
+          description:
+            "Una recreación del sitio web The New York Times desarrollada con React.",
+          tags: ["React", "JavaScript", "Frontend"],
         },
       ],
       github: "Explora mis repositorios en GitHub",
@@ -304,7 +331,11 @@ export const copy = {
         },
         {
           title: "Enfoque de ingeniería",
-          items: ["Pensamiento sistémico", "Resolución de problemas", "Integración"],
+          items: [
+            "Pensamiento sistémico",
+            "Resolución de problemas",
+            "Integración",
+          ],
         },
       ],
     },
