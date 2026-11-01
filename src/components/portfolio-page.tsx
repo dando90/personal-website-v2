@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import ProjectImage from "@/components/project-image";
+import ProfileImage from "@/components/profile-image";
 import SocialIcon, { type SocialIconName } from "@/components/social-icon";
 import { projectAssets, type ProjectId } from "@/lib/project-assets";
 import SiteHeader from "@/components/site-header";
@@ -157,7 +158,7 @@ function ProjectCard({
 
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-surface transition-colors hover:border-brand/40">
-      <div className="relative aspect-[16/10] w-full overflow-hidden bg-page">
+      <div className="relative aspect-16/10 w-full overflow-hidden bg-page">
         <ProjectImage
           alt={project.imageAlt}
           sizes={imageSizes}
@@ -257,7 +258,7 @@ export default function PortfolioPage({ locale }: { locale: Locale }) {
         <div className="mx-auto max-w-7xl px-4 sm:px-8">
           <section
             aria-labelledby="hero-title"
-            className="overflow-hidden rounded-[1.5rem] bg-hero px-6 py-12 text-hero-ink sm:rounded-[2rem] sm:px-10 sm:py-16 lg:px-16 lg:py-20"
+            className="overflow-hidden rounded-3xl bg-hero px-6 py-12 text-hero-ink sm:rounded-4xl sm:px-10 sm:py-16 lg:px-16 lg:py-20"
           >
             <p className="mb-5 flex items-center gap-2.5 text-xs font-semibold tracking-[0.13em] text-hero-muted sm:text-sm">
               <span
@@ -311,7 +312,8 @@ export default function PortfolioPage({ locale }: { locale: Locale }) {
           className="scroll-mt-8 px-5 py-16 sm:px-8 sm:py-20 lg:py-24"
           id="about"
         >
-          <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:gap-16">
+          <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-8 md:grid-cols-[13rem_minmax(0,1fr)] xl:grid-cols-[15rem_minmax(0,1fr)_18rem] xl:items-center">
+            <ProfileImage alt={content.about.imageAlt} />
             <div>
               <SectionHeading
                 id="about-title"
@@ -323,7 +325,7 @@ export default function PortfolioPage({ locale }: { locale: Locale }) {
               </p>
             </div>
 
-            <aside className="rounded-2xl border border-border bg-surface p-6 sm:p-8">
+            <aside className="rounded-2xl border border-border bg-surface p-6 sm:p-8 md:col-start-2 xl:col-start-3 xl:row-start-1">
               <h3 className="text-lg font-semibold tracking-tight text-ink">
                 {content.about.principlesTitle}
               </h3>
@@ -341,6 +343,45 @@ export default function PortfolioPage({ locale }: { locale: Locale }) {
                 ))}
               </ol>
             </aside>
+          </div>
+        </section>
+
+        <section
+          aria-labelledby="experience-title"
+          className="scroll-mt-8 bg-white/55 px-5 py-16 sm:px-8 sm:py-20 lg:py-24"
+          id="experience"
+        >
+          <div className="mx-auto max-w-7xl">
+            <SectionHeading
+              id="experience-title"
+              eyebrow={content.experience.eyebrow}
+              title={content.experience.title}
+            />
+            <ol className="grid gap-4 md:grid-cols-2">
+              {content.experience.items.map((item) => (
+                <li
+                  className="rounded-2xl border border-border bg-surface p-6 sm:p-7"
+                  key={`${item.company}-${item.role}`}
+                >
+                  <div className="flex flex-wrap items-start justify-between gap-3">
+                    <div>
+                      <h3 className="text-lg font-semibold tracking-tight text-ink">
+                        {item.role}
+                      </h3>
+                      <p className="mt-1 text-sm font-medium text-brand">
+                        {item.company}
+                      </p>
+                    </div>
+                    <span className="rounded-full bg-page px-3 py-1 text-xs font-medium text-secondary">
+                      {item.period}
+                    </span>
+                  </div>
+                  <p className="mt-5 text-sm leading-7 text-secondary sm:text-base">
+                    {item.description}
+                  </p>
+                </li>
+              ))}
+            </ol>
           </div>
         </section>
 
@@ -390,7 +431,7 @@ export default function PortfolioPage({ locale }: { locale: Locale }) {
               eyebrow={content.skills.eyebrow}
               title={content.skills.title}
             />
-            <div className="grid gap-4 md:grid-cols-3 md:gap-5">
+            <div className="grid gap-4 md:grid-cols-2 md:gap-5 xl:grid-cols-4">
               {content.skills.groups.map((group, index) => (
                 <SkillGroup
                   group={group}
@@ -407,7 +448,7 @@ export default function PortfolioPage({ locale }: { locale: Locale }) {
           className="scroll-mt-8 px-5 pb-16 sm:px-8 sm:pb-20 lg:pb-24"
           id="contact"
         >
-          <div className="mx-auto max-w-7xl rounded-[1.5rem] border border-border bg-surface p-6 sm:rounded-[2rem] sm:p-10 lg:p-14">
+          <div className="mx-auto max-w-7xl rounded-3xl border border-border bg-surface p-6 sm:rounded-4xl sm:p-10 lg:p-14">
             <div className="grid gap-8 md:grid-cols-[1fr_auto] md:items-end">
               <div className="max-w-2xl">
                 <p className="mb-3 text-xs font-semibold tracking-[0.16em] text-brand uppercase">

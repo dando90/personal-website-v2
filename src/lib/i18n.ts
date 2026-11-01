@@ -17,30 +17,17 @@ export function isLocale(value: string): value is Locale {
   return locales.some((locale) => locale === value);
 }
 
-export function resolveLocale(
-  browserLanguages: readonly string[],
-  savedLocale?: string | null,
-): Locale {
-  if (savedLocale && isLocale(savedLocale)) return savedLocale;
-
-  for (const language of browserLanguages) {
-    const baseLanguage = language.toLowerCase().split(/[-_]/)[0];
-    if (baseLanguage && isLocale(baseLanguage)) return baseLanguage;
-  }
-
-  return defaultLocale;
-}
-
 export const copy = {
   en: {
     metadata: {
       title: "Stefano Chiabrando — Software Engineering & Applied AI",
       description:
-        "Software engineering, AI-powered applications, LLM systems, RAG and agentic workflows.",
+        "Software developer with a background in electrical engineering, web development and industrial systems, now focusing on applied AI, LLM applications and RAG.",
     },
     nav: {
       navigation: "Main navigation",
       about: "About",
+      experience: "Experience",
       projects: "Projects",
       skills: "Skills",
       contact: "Contact",
@@ -49,23 +36,58 @@ export const copy = {
     hero: {
       areasLabel: "Areas of focus",
       eyebrow: "SOFTWARE · AI · INTELLIGENT SYSTEMS",
-      title: "Building intelligent software.",
+      title: "Software engineering for practical AI.",
       description:
-        "AI-powered applications, LLM systems and agentic workflows.",
+        "I build web applications and am expanding my work into LLMs, retrieval-augmented generation and applied AI.",
       projects: "View projects",
       about: "About me",
-      tags: ["LLM & RAG", "AI Agents", "Software Engineering"],
+      tags: ["Applied AI", "LLM & RAG", "Full-stack development"],
     },
     about: {
       eyebrow: "ABOUT",
-      title: "Engineering thinking, applied to software and AI.",
+      title: "From industrial systems to software and applied AI.",
       description:
-        "With a background in electrical engineering and web development, I bring a practical, systems-oriented perspective to software. I focus on turning AI capabilities into useful applications, with thoughtful workflows and maintainable foundations.",
+        "I’m a software developer with a degree in Electrical Engineering and hands-on experience building web applications. Earlier work in industrial commissioning and troubleshooting shaped my practical, systems-oriented approach. I’m now deepening my focus on AI-powered software, including LLM applications and retrieval-based systems.",
+      imageAlt: "Portrait of Stefano Chiabrando",
       principlesTitle: "How I approach a problem",
       principles: [
         "Understand the real need and the system constraints.",
         "Choose the simplest architecture that can grow with the product.",
         "Build, test and refine a concrete solution.",
+      ],
+    },
+    experience: {
+      eyebrow: "EXPERIENCE",
+      title: "Software delivery grounded in engineering practice.",
+      items: [
+        {
+          role: "Service Engineer",
+          company: "Inductotherm Group Italy",
+          period: "Jan 2025 – Apr 2026",
+          description:
+            "Installed, commissioned and maintained industrial induction welding and cutting systems; diagnosed electrical and automation faults and contributed to a Siemens-based production-line project.",
+        },
+        {
+          role: "Full Stack Developer",
+          company: "Niomind s.r.l. SB",
+          period: "Aug 2023 – Apr 2024",
+          description:
+            "Built frontend applications with Next.js and Tailwind CSS and developed plugins and integrations for Moodle-based e-learning platforms.",
+        },
+        {
+          role: "Web Developer",
+          company: "El Garbo de Greta Comunicación",
+          period: "Dec 2022 – Jan 2023",
+          description:
+            "Redesigned a corporate website and developed and maintained websites for hospitality and small-business clients, including WordPress and PrestaShop projects.",
+        },
+        {
+          role: "Commissioning Technician",
+          company: "SAET S.p.A.",
+          period: "May 2019 – Nov 2019",
+          description:
+            "Tested and commissioned industrial induction machinery, verified Siemens PLCs and ran automatic-cycle and fault-simulation tests.",
+        },
       ],
     },
     projects: {
@@ -116,31 +138,35 @@ export const copy = {
     },
     skills: {
       eyebrow: "SKILLS",
-      title: "A practical, cross-disciplinary toolkit.",
+      title: "A practical toolkit across software, data and AI.",
       groups: [
         {
           title: "Software engineering",
-          items: ["TypeScript", "JavaScript", "React", "Next.js", "PHP"],
+          items: ["JavaScript", "React", "Next.js", "Tailwind CSS", "Python", "PHP", "Laravel", "REST APIs"],
         },
         {
           title: "Applied AI",
-          items: ["AI applications", "LLMs", "RAG", "Agentic systems"],
+          items: ["LangChain", "LLM integration", "RAG", "Embeddings", "Semantic search"],
         },
         {
-          title: "Engineering mindset",
+          title: "Data and engineering practice",
           items: [
             "Systems thinking",
             "Technical problem solving",
-            "Integration",
+            "SQL · MySQL",
           ],
+        },
+        {
+          title: "Languages",
+          items: ["Italian · Native", "English · B2", "Spanish · B2"],
         },
       ],
     },
     contact: {
       eyebrow: "CONTACT",
-      title: "Have a thoughtful problem to solve?",
+      title: "Let’s build useful software with a clear purpose.",
       description:
-        "I’m interested in practical software and AI challenges. Find me on LinkedIn or explore my work on GitHub.",
+        "I’m looking to grow as a software developer in an innovative, international technology environment, contributing to practical products and exploring applied AI.",
       linkedin: "Connect on LinkedIn",
       github: "GitHub profile",
     },
@@ -154,11 +180,12 @@ export const copy = {
     metadata: {
       title: "Stefano Chiabrando — Ingegneria del software e AI applicata",
       description:
-        "Ingegneria del software, applicazioni AI, sistemi LLM, RAG e workflow agentici.",
+        "Sviluppatore software con formazione in ingegneria elettrica ed esperienza nello sviluppo web e nei sistemi industriali; oggi con focus sull’AI applicata, gli LLM e il RAG.",
     },
     nav: {
       navigation: "Navigazione principale",
       about: "Chi sono",
+      experience: "Esperienza",
       projects: "Progetti",
       skills: "Competenze",
       contact: "Contatti",
@@ -167,22 +194,58 @@ export const copy = {
     hero: {
       areasLabel: "Aree di interesse",
       eyebrow: "SOFTWARE · AI · SISTEMI INTELLIGENTI",
-      title: "Sviluppo software intelligente.",
-      description: "Applicazioni AI, sistemi LLM e workflow agentici.",
+      title: "Ingegneria del software per un’AI concreta.",
+      description:
+        "Sviluppo applicazioni web e sto approfondendo LLM, generazione aumentata dal recupero delle informazioni e AI applicata.",
       projects: "Vedi i progetti",
       about: "Chi sono",
-      tags: ["LLM & RAG", "Agenti AI", "Software Engineering"],
+      tags: ["AI applicata", "LLM & RAG", "Sviluppo full stack"],
     },
     about: {
       eyebrow: "CHI SONO",
-      title: "Il pensiero ingegneristico applicato a software e AI.",
+      title: "Dai sistemi industriali al software e all’AI applicata.",
       description:
-        "Con una formazione in ingegneria elettrica e sviluppo web, affronto il software con un approccio pratico e orientato ai sistemi. Mi concentro sul trasformare le capacità dell’AI in applicazioni utili, con workflow curati e basi manutenibili.",
+        "Sono uno sviluppatore software, laureato in Ingegneria Elettrica, con esperienza pratica nella realizzazione di applicazioni web. Il precedente lavoro nel commissioning e nella diagnostica industriale ha rafforzato il mio approccio concreto e orientato ai sistemi. Ora sto approfondendo il software con AI, le applicazioni basate su LLM e i sistemi di retrieval.",
+      imageAlt: "Ritratto di Stefano Chiabrando",
       principlesTitle: "Come affronto un problema",
       principles: [
         "Capire il bisogno reale e i vincoli del sistema.",
         "Scegliere l’architettura più semplice che possa evolvere con il prodotto.",
         "Costruire, verificare e migliorare una soluzione concreta.",
+      ],
+    },
+    experience: {
+      eyebrow: "ESPERIENZA",
+      title: "Software concreto, con solide basi ingegneristiche.",
+      items: [
+        {
+          role: "Service Engineer",
+          company: "Inductotherm Group Italy",
+          period: "Gen 2025 – Apr 2026",
+          description:
+            "Installazione, commissioning e manutenzione di impianti industriali per saldatura e taglio a induzione; diagnosi di guasti elettrici e di automazione e contributo a un progetto di linea produttiva basato su Siemens.",
+        },
+        {
+          role: "Full Stack Developer",
+          company: "Niomind s.r.l. SB",
+          period: "Ago 2023 – Apr 2024",
+          description:
+            "Sviluppo di applicazioni frontend con Next.js e Tailwind CSS e realizzazione di plugin e integrazioni per piattaforme e-learning basate su Moodle.",
+        },
+        {
+          role: "Web Developer",
+          company: "El Garbo de Greta Comunicación",
+          period: "Dic 2022 – Gen 2023",
+          description:
+            "Restyling di un sito aziendale e sviluppo e gestione di siti per attività ricettive e piccole imprese, con progetti WordPress e PrestaShop.",
+        },
+        {
+          role: "Tecnico di commissioning",
+          company: "SAET S.p.A.",
+          period: "Mag 2019 – Nov 2019",
+          description:
+            "Collaudo e messa in servizio di macchinari industriali a induzione, verifiche su PLC Siemens e test di cicli automatici e simulazione guasti.",
+        },
       ],
     },
     projects: {
@@ -234,31 +297,35 @@ export const copy = {
     },
     skills: {
       eyebrow: "COMPETENZE",
-      title: "Competenze pratiche e trasversali.",
+      title: "Competenze pratiche tra software, dati e AI.",
       groups: [
         {
           title: "Ingegneria del software",
-          items: ["TypeScript", "JavaScript", "React", "Next.js", "PHP"],
+          items: ["JavaScript", "React", "Next.js", "Tailwind CSS", "Python", "PHP", "Laravel", "API REST"],
         },
         {
           title: "AI applicata",
-          items: ["Applicazioni AI", "LLM", "RAG", "Sistemi agentici"],
+          items: ["LangChain", "Integrazione LLM", "RAG", "Embeddings", "Ricerca semantica"],
         },
         {
-          title: "Approccio ingegneristico",
+          title: "Dati e metodo ingegneristico",
           items: [
             "Pensiero sistemico",
             "Problem solving tecnico",
-            "Integrazione",
+            "SQL · MySQL",
           ],
+        },
+        {
+          title: "Lingue",
+          items: ["Italiano · Madrelingua", "Inglese · B2", "Spagnolo · B2"],
         },
       ],
     },
     contact: {
       eyebrow: "CONTATTI",
-      title: "Hai un problema interessante da risolvere?",
+      title: "Costruiamo software utile, con uno scopo chiaro.",
       description:
-        "Mi interessano le sfide concrete nel software e nell’AI. Mi trovi su LinkedIn o puoi esplorare il mio lavoro su GitHub.",
+        "Voglio crescere come sviluppatore software in un contesto tecnologico innovativo e internazionale, contribuendo a prodotti concreti e approfondendo l’AI applicata.",
       linkedin: "Connettiti su LinkedIn",
       github: "Profilo GitHub",
     },
@@ -272,11 +339,12 @@ export const copy = {
     metadata: {
       title: "Stefano Chiabrando — Ingeniería de software e IA aplicada",
       description:
-        "Ingeniería de software, aplicaciones de IA, sistemas LLM, RAG y flujos de trabajo agénticos.",
+        "Desarrollador de software con formación en ingeniería eléctrica y experiencia en desarrollo web y sistemas industriales; ahora enfocado en IA aplicada, LLM y RAG.",
     },
     nav: {
       navigation: "Navegación principal",
       about: "Sobre mí",
+      experience: "Experiencia",
       projects: "Proyectos",
       skills: "Habilidades",
       contact: "Contacto",
@@ -285,23 +353,58 @@ export const copy = {
     hero: {
       areasLabel: "Áreas de enfoque",
       eyebrow: "SOFTWARE · IA · SISTEMAS INTELIGENTES",
-      title: "Desarrollo software inteligente.",
+      title: "Ingeniería de software para una IA práctica.",
       description:
-        "Aplicaciones de IA, sistemas LLM y flujos de trabajo agénticos.",
+        "Desarrollo aplicaciones web y estoy ampliando mi experiencia en LLM, generación aumentada por recuperación e IA aplicada.",
       projects: "Ver proyectos",
       about: "Sobre mí",
-      tags: ["LLM y RAG", "Agentes de IA", "Ingeniería de software"],
+      tags: ["IA aplicada", "LLM y RAG", "Desarrollo full stack"],
     },
     about: {
       eyebrow: "SOBRE MÍ",
-      title: "Pensamiento de ingeniería aplicado al software y la IA.",
+      title: "De los sistemas industriales al software y la IA aplicada.",
       description:
-        "Con formación en ingeniería eléctrica y desarrollo web, aporto al software una perspectiva práctica y centrada en sistemas. Me enfoco en convertir las capacidades de la IA en aplicaciones útiles, con flujos de trabajo bien pensados y bases fáciles de mantener.",
+        "Soy desarrollador de software y graduado en Ingeniería Eléctrica, con experiencia práctica en aplicaciones web. Mi trabajo previo en puesta en marcha y diagnóstico industrial reforzó un enfoque práctico y orientado a sistemas. Ahora estoy profundizando en software con IA, aplicaciones basadas en LLM y sistemas de recuperación de información.",
+      imageAlt: "Retrato de Stefano Chiabrando",
       principlesTitle: "Cómo abordo un problema",
       principles: [
         "Entender la necesidad real y las limitaciones del sistema.",
         "Elegir la arquitectura más sencilla que pueda evolucionar con el producto.",
         "Construir, probar y mejorar una solución concreta.",
+      ],
+    },
+    experience: {
+      eyebrow: "EXPERIENCIA",
+      title: "Desarrollo de software con base en la ingeniería práctica.",
+      items: [
+        {
+          role: "Service Engineer",
+          company: "Inductotherm Group Italy",
+          period: "Ene 2025 – Abr 2026",
+          description:
+            "Instalación, puesta en marcha y mantenimiento de equipos industriales de soldadura y corte por inducción; diagnóstico de fallos eléctricos y de automatización y participación en un proyecto de producción basado en Siemens.",
+        },
+        {
+          role: "Full Stack Developer",
+          company: "Niomind s.r.l. SB",
+          period: "Ago 2023 – Abr 2024",
+          description:
+            "Desarrollo de aplicaciones frontend con Next.js y Tailwind CSS, además de plugins e integraciones para plataformas de aprendizaje basadas en Moodle.",
+        },
+        {
+          role: "Web Developer",
+          company: "El Garbo de Greta Comunicación",
+          period: "Dic 2022 – Ene 2023",
+          description:
+            "Rediseño de un sitio corporativo y desarrollo y gestión de webs para alojamientos y pequeñas empresas, con proyectos en WordPress y PrestaShop.",
+        },
+        {
+          role: "Técnico de puesta en marcha",
+          company: "SAET S.p.A.",
+          period: "May 2019 – Nov 2019",
+          description:
+            "Pruebas y puesta en marcha de maquinaria industrial por inducción, verificaciones de PLC Siemens y pruebas de ciclos automáticos y simulación de fallos.",
+        },
       ],
     },
     projects: {
@@ -353,31 +456,35 @@ export const copy = {
     },
     skills: {
       eyebrow: "HABILIDADES",
-      title: "Un conjunto de habilidades práctico y transversal.",
+      title: "Habilidades prácticas en software, datos e IA.",
       groups: [
         {
           title: "Ingeniería de software",
-          items: ["TypeScript", "JavaScript", "React", "Next.js", "PHP"],
+          items: ["JavaScript", "React", "Next.js", "Tailwind CSS", "Python", "PHP", "Laravel", "API REST"],
         },
         {
           title: "IA aplicada",
-          items: ["Aplicaciones de IA", "LLM", "RAG", "Sistemas agénticos"],
+          items: ["LangChain", "Integración LLM", "RAG", "Embeddings", "Búsqueda semántica"],
         },
         {
-          title: "Enfoque de ingeniería",
+          title: "Datos y enfoque de ingeniería",
           items: [
             "Pensamiento sistémico",
             "Resolución de problemas",
-            "Integración",
+            "SQL · MySQL",
           ],
+        },
+        {
+          title: "Idiomas",
+          items: ["Italiano · Nativo", "Inglés · B2", "Español · B2"],
         },
       ],
     },
     contact: {
       eyebrow: "CONTACTO",
-      title: "¿Tienes un problema interesante que resolver?",
+      title: "Construyamos software útil y con un propósito claro.",
       description:
-        "Me interesan los retos prácticos de software e IA. Puedes encontrarme en LinkedIn o explorar mi trabajo en GitHub.",
+        "Busco crecer como desarrollador de software en un entorno tecnológico innovador e internacional, contribuyendo a productos prácticos y profundizando en la IA aplicada.",
       linkedin: "Conecta en LinkedIn",
       github: "Perfil de GitHub",
     },

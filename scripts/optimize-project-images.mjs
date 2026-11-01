@@ -4,10 +4,24 @@ import sharp from "sharp";
 
 const inputDirectory = path.resolve("assets/project-images");
 const outputDirectory = path.resolve("public/images/projects");
+const profileInput = path.resolve("assets/profile/stefano-chiabrando-original.png");
+const profileOutput = path.resolve("public/images/profile");
 const supportedExtensions = new Set([".avif", ".jpg", ".jpeg", ".png", ".webp"]);
 const widths = [480, 800, 1200];
 
 await mkdir(outputDirectory, { recursive: true });
+await mkdir(profileOutput, { recursive: true });
+
+for (const width of [480, 800]) {
+  const outputPath = path.join(profileOutput, `stefano-chiabrando-${width}.webp`);
+  await sharp(profileInput)
+    .rotate()
+    .resize({ width, withoutEnlargement: true })
+    .webp({ quality: 84, effort: 5 })
+    .toFile(outputPath);
+
+  console.log(`Created ${path.relative(process.cwd(), outputPath)}`);
+}
 
 const inputs = (await readdir(inputDirectory, { withFileTypes: true }))
   .filter((entry) => entry.isFile())

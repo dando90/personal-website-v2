@@ -11,6 +11,7 @@ export default function SiteHeader({
 }) {
   const navigation = [
     { href: "#about", label: content.nav.about },
+    { href: "#experience", label: content.nav.experience },
     { href: "#projects", label: content.nav.projects },
     { href: "#skills", label: content.nav.skills },
     { href: "#contact", label: content.nav.contact },
