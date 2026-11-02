@@ -13,7 +13,7 @@ export const commonCopy = {
       "language": "Language"
     },
     "footer": {
-      "note": "Designed and built with care.",
+      "tagline": "Software development · Web · AI",
       "socialLinks": "Social links",
       "backToTop": "Back to top"
     }
@@ -29,7 +29,7 @@ export const commonCopy = {
       "language": "Lingua"
     },
     "footer": {
-      "note": "Progettato e realizzato con cura.",
+      "tagline": "Sviluppo software · Web · AI",
       "socialLinks": "Profili social",
       "backToTop": "Torna all’inizio"
     }
@@ -45,7 +45,7 @@ export const commonCopy = {
       "language": "Idioma"
     },
     "footer": {
-      "note": "Diseñado y desarrollado con cuidado.",
+      "tagline": "Desarrollo de software · Web · IA",
       "socialLinks": "Redes sociales",
       "backToTop": "Volver arriba"
     }

@@ -20,7 +20,7 @@ export default function AboutPage({ content }: { content: AboutContent }) {
             description={about.description}
           />
         </div>
-        <aside className="rounded-2xl border border-border bg-surface p-6 sm:p-8 md:col-start-2 xl:col-start-3 xl:row-start-1">
+        <aside className="rounded-2xl border border-border bg-surface p-6 sm:p-8 md:col-span-2 md:col-start-1 xl:col-span-1 xl:col-start-3 xl:row-start-1">
           <h2 className="text-lg font-semibold tracking-tight text-ink">
             {about.principlesTitle}
           </h2>

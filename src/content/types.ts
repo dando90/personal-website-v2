@@ -15,7 +15,7 @@ export interface CommonContent {
     language: string;
   };
   footer: {
-    note: string;
+    tagline: string;
     socialLinks: string;
     backToTop: string;
   };

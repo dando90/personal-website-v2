@@ -2,8 +2,6 @@ import Link from "next/link";
 import SocialIcon, { type SocialIconName } from "@/components/social-icon";
 import type { CommonContent } from "@/content/types";
 
-const githubUrl = "https://github.com/dando90";
-
 const socialLinks: {
   name: SocialIconName;
   label: string;
@@ -31,7 +29,7 @@ const socialLinks: {
   {
     name: "github",
     label: "GitHub",
-    href: githubUrl,
+    href: "https://github.com/dando90",
     hoverColor: "hover:text-[#211f1f]",
   },
 ];
@@ -41,9 +39,16 @@ export default function SiteFooter({
 }: {
   content: CommonContent["footer"];
 }) {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="mx-auto flex w-full max-w-7xl flex-wrap items-center gap-3 px-5 pb-7 text-sm text-secondary sm:px-8">
-      <p>© Stefano Chiabrando · {content.note}</p>
+    <footer className="mx-auto flex w-full max-w-7xl flex-wrap items-end gap-4 px-5 pb-7 sm:px-8">
+      <div>
+        <p className="text-xl font-semibold tracking-tight text-ink">
+          © {currentYear} Stefano Chiabrando
+        </p>
+        <p className="mt-1 text-sm text-secondary">{content.tagline}</p>
+      </div>
       <div className="ml-auto flex items-center gap-4">
         <nav
           aria-label={content.socialLinks}
