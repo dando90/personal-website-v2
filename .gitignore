@@ -36,6 +36,10 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+/private/config.php
+/private/storage/
+/public/private/config.php
+/public/private/storage/
 
 # vercel
 .vercel

@@ -97,7 +97,22 @@ export interface ContactContent {
     eyebrow: string;
     title: string;
     description: string;
-    linkedin: string;
-    github: string;
+    form: {
+      name: string;
+      nameOptional: string;
+      email: string;
+      emailPlaceholder: string;
+      message: string;
+      messageHelp: string;
+      send: string;
+      sending: string;
+      loading: string;
+      sent: string;
+      invalid: string;
+      tooManyWords: string;
+      rateLimited: string;
+      unavailable: string;
+      genericError: string;
+    };
   };
 }
