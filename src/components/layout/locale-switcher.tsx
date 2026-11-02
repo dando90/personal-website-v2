@@ -8,13 +8,16 @@ import {
   locales,
   type Locale,
 } from "@/lib/i18n";
+import { localizedPath, type PageKey } from "@/lib/routes";
 
 export default function LocaleSwitcher({
   locale,
   label,
+  page,
 }: {
   locale: Locale;
   label: string;
+  page: PageKey;
 }) {
   const router = useRouter();
 
@@ -28,7 +31,7 @@ export default function LocaleSwitcher({
     }
 
     document.documentElement.lang = nextLocale;
-    router.push(`/${nextLocale}/`);
+    router.push(localizedPath(nextLocale, page));
   }
 
   return (

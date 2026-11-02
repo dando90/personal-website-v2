@@ -1,12 +1,12 @@
-import { notFound } from "next/navigation";
-import PortfolioPage from "@/components/portfolio-page";
-import { isLocale } from "@/lib/i18n";
+import LocalizedPage, {
+  localizedPageMetadata,
+  type LocalizedPageProps,
+} from "@/lib/localized-page";
 
-export default async function LocalizedPage({
-  params,
-}: PageProps<"/[lang]">) {
-  const { lang } = await params;
-  if (!isLocale(lang)) notFound();
+export function generateMetadata({ params }: LocalizedPageProps) {
+  return localizedPageMetadata(params, "home");
+}
 
-  return <PortfolioPage locale={lang} />;
+export default function HomeRoute({ params }: LocalizedPageProps) {
+  return <LocalizedPage params={params} page="home" />;
 }

@@ -1,15 +1,16 @@
 /* eslint-disable @next/next/no-sync-scripts -- The root locale check must finish before the English static body can paint. */
 import type { Metadata } from "next";
 import "@/app/globals.css";
+import { getSiteContent } from "@/content";
 import { geistMono, geistSans } from "@/lib/fonts";
 
 const siteUrl = "https://www.stefanochiabrando.com";
+const homeMetadata = getSiteContent("en").home.metadata;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Stefano Chiabrando — Software Engineering & Applied AI",
-  description:
-    "Software engineering, AI-powered applications, LLM systems, RAG and agentic workflows.",
+  title: homeMetadata.title,
+  description: homeMetadata.description,
   alternates: {
     canonical: "/en/",
     languages: {
