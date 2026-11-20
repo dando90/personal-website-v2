@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img">
+  <rect width="1600" height="1000" fill="#eff6ff"/>
+  <circle cx="1380" cy="140" r="250" fill="#dbeafe"/>
+  <circle cx="190" cy="850" r="220" fill="#cffafe"/>
+  <rect x="330" y="170" width="940" height="660" rx="42" fill="#fff" stroke="#dce3ec" stroke-width="8"/>
+  <rect x="390" y="230" width="820" height="70" rx="18" fill="#101b2d"/>
+  <circle cx="435" cy="265" r="10" fill="#06b6d4"/>
+  <rect x="470" y="254" width="280" height="22" rx="11" fill="#cbd5e1"/>
+  <rect x="430" y="370" width="240" height="390" rx="18" fill="#172033"/>
+  <rect x="465" y="410" width="170" height="18" rx="9" fill="#60a5fa"/>
+  <rect x="465" y="455" width="130" height="14" rx="7" fill="#94a3b8"/>
+  <rect x="465" y="490" width="150" height="14" rx="7" fill="#94a3b8"/>
+  <rect x="465" y="525" width="110" height="14" rx="7" fill="#94a3b8"/>
+  <rect x="710" y="370" width="460" height="170" rx="18" fill="#eff6ff" stroke="#dce3ec" stroke-width="4"/>
+  <rect x="750" y="415" width="300" height="18" rx="9" fill="#2563eb"/>
+  <rect x="750" y="460" width="350" height="14" rx="7" fill="#94a3b8"/>
+  <rect x="710" y="575" width="460" height="185" rx="18" fill="#ecfeff" stroke="#dce3ec" stroke-width="4"/>
+  <rect x="750" y="620" width="210" height="18" rx="9" fill="#0891b2"/>
+  <rect x="750" y="665" width="350" height="14" rx="7" fill="#94a3b8"/>
+  <text x="800" y="925" text-anchor="middle" fill="#64748b" font-family="Arial, sans-serif" font-size="28">PERSONAL WEBSITE V2 · SOURCE CODE</text>
+</svg>

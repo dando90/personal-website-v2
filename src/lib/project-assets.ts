@@ -11,25 +11,30 @@ function defineProjectAsset(asset: ProjectAsset): ProjectAsset {
 export const projectAssets = {
   counterJavaScript: defineProjectAsset({
     image: "/images/projects/counter-javascript.svg",
-    githubUrl:
-      "https://github.com/dando90/dando90.github.io/tree/main/portfolio/javascript_basics",
-    demoUrl: "https://www.stefanochiabrando.com/portfolio/counter/",
+    githubUrl: "https://github.com/dando90/counter",
+    demoUrl: "/projects/counter/index.html",
   }),
   bookFinder: defineProjectAsset({
     image: "/images/projects/book-finder.svg",
-    githubUrl:
-      "https://github.com/dando90/dando90.github.io/tree/main/portfolio/bookfinder",
-    demoUrl: "https://www.stefanochiabrando.com/portfolio/bookfinder/",
+    githubUrl: "https://github.com/dando90/bookfinder",
+    demoUrl: "/projects/bookfinder/index.html",
   }),
   phpRestApi: defineProjectAsset({
     image: "/images/projects/php-rest-api.svg",
-    githubUrl:
-      "https://github.com/dando90/dando90.github.io/tree/main/portfolio/apirest",
+    githubUrl: "https://github.com/dando90/apirest-php",
   }),
   reactNyTimesClone: defineProjectAsset({
     image: "/images/projects/react-ny-times-clone.svg",
     githubUrl: "https://github.com/dando90/nytimesclone",
-    demoUrl: "https://www.stefanochiabrando.com/portfolio/nytimesclone/",
+    demoUrl: "/projects/nytimesclone/index.html",
+  }),
+  personalWebsiteV1: defineProjectAsset({
+    image: "/images/projects/personal-website-v1.svg",
+    githubUrl: "https://github.com/dando90/personal-website-v1",
+  }),
+  personalWebsiteV2: defineProjectAsset({
+    image: "/images/projects/personal-website-v2.svg",
+    githubUrl: "https://github.com/dando90/personal-website-v2",
   }),
 };
 

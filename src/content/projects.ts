@@ -55,6 +55,29 @@ export const projectsCopy = {
             "JavaScript",
             "Frontend"
           ]
+        },
+        {
+          "id": "personalWebsiteV1",
+          "number": "05",
+          "title": "Personal Website v1",
+          "imageAlt": "Placeholder artwork for the first version of my personal website",
+          "description": "The first version of my personal website, built before this portfolio.",
+          "tags": [
+            "Personal Website",
+            "Web Development"
+          ]
+        },
+        {
+          "id": "personalWebsiteV2",
+          "number": "06",
+          "title": "Personal Website v2",
+          "imageAlt": "Placeholder artwork for the source code of my current personal website",
+          "description": "The source code for this portfolio, built with Next.js, TypeScript and Tailwind CSS.",
+          "tags": [
+            "Next.js",
+            "TypeScript",
+            "Tailwind CSS"
+          ]
         }
       ],
       "github": "Explore my GitHub repositories"
@@ -113,6 +136,29 @@ export const projectsCopy = {
             "JavaScript",
             "Frontend"
           ]
+        },
+        {
+          "id": "personalWebsiteV1",
+          "number": "05",
+          "title": "Personal Website v1",
+          "imageAlt": "Immagine segnaposto della prima versione del mio sito personale",
+          "description": "La prima versione del mio sito personale, realizzata prima di questo portfolio.",
+          "tags": [
+            "Sito personale",
+            "Sviluppo web"
+          ]
+        },
+        {
+          "id": "personalWebsiteV2",
+          "number": "06",
+          "title": "Personal Website v2",
+          "imageAlt": "Immagine segnaposto del codice sorgente del mio sito personale attuale",
+          "description": "Il codice sorgente di questo portfolio, realizzato con Next.js, TypeScript e Tailwind CSS.",
+          "tags": [
+            "Next.js",
+            "TypeScript",
+            "Tailwind CSS"
+          ]
         }
       ],
       "github": "Esplora i repository su GitHub"
@@ -170,6 +216,29 @@ export const projectsCopy = {
             "React",
             "JavaScript",
             "Frontend"
+          ]
+        },
+        {
+          "id": "personalWebsiteV1",
+          "number": "05",
+          "title": "Personal Website v1",
+          "imageAlt": "Imagen provisional de la primera versión de mi sitio personal",
+          "description": "La primera versión de mi sitio personal, creada antes de este portfolio.",
+          "tags": [
+            "Sitio personal",
+            "Desarrollo web"
+          ]
+        },
+        {
+          "id": "personalWebsiteV2",
+          "number": "06",
+          "title": "Personal Website v2",
+          "imageAlt": "Imagen provisional del código fuente de mi sitio personal actual",
+          "description": "El código fuente de este portfolio, desarrollado con Next.js, TypeScript y Tailwind CSS.",
+          "tags": [
+            "Next.js",
+            "TypeScript",
+            "Tailwind CSS"
           ]
         }
       ],
