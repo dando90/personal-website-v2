@@ -36,8 +36,6 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
-/private/config.php
-/private/storage/
 /public/private/config.php
 /public/private/storage/
 
@@ -51,3 +49,6 @@ next-env.d.ts
 # Codex
 /tmp/
 /output/
+
+#google
+googlea7c98e5a36e23ffe.html
