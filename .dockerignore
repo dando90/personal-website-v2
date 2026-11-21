@@ -1,0 +1,17 @@
+.git
+.github
+.env*
+*.pem
+node_modules
+.next
+out
+coverage
+.DS_Store
+*.tsbuildinfo
+npm-debug.log*
+public/private
+public/workspace
+public/images/projects/*-480.webp
+public/images/projects/*-800.webp
+public/images/projects/*-1200.webp
+public/images/profile/*.webp

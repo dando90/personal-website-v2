@@ -1,0 +1,89 @@
+name: Build and deploy portfolio
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Simulate the FTP deploy without changing the server
+        required: true
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: portfolio-production-deploy
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    name: Build and deploy static export
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build static export
+        run: npm run build
+
+      - name: Validate FTP destination
+        if: github.event_name == 'workflow_dispatch' || vars.FTP_DEPLOY_ENABLED == 'true'
+        env:
+          FTP_SERVER_DIR: ${{ vars.FTP_SERVER_DIR }}
+        run: |
+          if [ -z "$FTP_SERVER_DIR" ]; then
+            echo "Set the FTP_SERVER_DIR Actions variable before running a deploy."
+            exit 1
+          fi
+          case "$FTP_SERVER_DIR" in
+            */) ;;
+            *) echo "FTP_SERVER_DIR must end with a slash, for example htdocs/."; exit 1 ;;
+          esac
+
+      - name: Block manual live deploy until enabled
+        if: github.event_name == 'workflow_dispatch' && inputs.dry_run == false && vars.FTP_DEPLOY_ENABLED != 'true'
+        run: |
+          echo "Live deploy is disabled. Review a manual dry-run, then set FTP_DEPLOY_ENABLED=true."
+          exit 1
+
+      - name: Deploy static export over FTPS
+        if: github.event_name == 'workflow_dispatch' || vars.FTP_DEPLOY_ENABLED == 'true'
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          local-dir: out/
+          server-dir: ${{ vars.FTP_SERVER_DIR }}
+          state-name: .ftp-deploy-sync-state.json
+          dangerous-clean-slate: false
+          dry-run: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            projects
+            projects/**
+            workspace
+            workspace/**
+            private
+            private/**
+            googlea7c98e5a36e23ffe.html
+          log-level: standard

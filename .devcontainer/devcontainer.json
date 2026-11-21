@@ -1,8 +1,12 @@
 {
   "name": "Mia App - Node.js",
-  "dockerComposeFile": "../compose.yaml",
+  "dockerComposeFile": [
+    "../compose.yaml",
+    "compose.devcontainer.yaml"
+  ],
   "service": "app",
   "workspaceFolder": "/workspace",
+  "overrideCommand": false,
   "shutdownAction": "stopCompose",
   "forwardPorts": [5173],
   "customizations": {
