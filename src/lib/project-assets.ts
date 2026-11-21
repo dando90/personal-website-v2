@@ -22,6 +22,7 @@ export const projectAssets = {
   phpRestApi: defineProjectAsset({
     image: "/images/projects/php-rest-api.svg",
     githubUrl: "https://github.com/dando90/apirest-php",
+    demoUrl: "/projects/apirest-php/demo",
   }),
   reactNyTimesClone: defineProjectAsset({
     image: "/images/projects/react-ny-times-clone.svg",
