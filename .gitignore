@@ -36,8 +36,6 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
-/public/private/config.php
-/public/private/storage/
 
 # vercel
 .vercel
@@ -52,3 +50,7 @@ next-env.d.ts
 
 #google
 googlea7c98e5a36e23ffe.html
+
+#private workspace
+/public/private
+/public/workspace

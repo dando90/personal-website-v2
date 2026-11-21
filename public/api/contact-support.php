@@ -1,25 +1,24 @@
 <?php
 declare(strict_types=1);
 
-date_default_timezone_set('Europe/Rome');
-
-function sc_config(): array
+function contact_config(): array
 {
     static $config = null;
     if ($config !== null) {
         return $config;
     }
 
-    $serverConfigPath = __DIR__ . '/config.php';
-    $localConfigPath = dirname(__DIR__, 2) . '/private/config.php';
-    $configPath = is_file($serverConfigPath) ? $serverConfigPath : $localConfigPath;
+    $configuredPath = getenv('SC_CONTACT_CONFIG');
+    $configPath = is_string($configuredPath) && $configuredPath !== ''
+        ? $configuredPath
+        : dirname(__DIR__) . '/private/config.php';
     if (!is_file($configPath) || !is_readable($configPath)) {
-        throw new RuntimeException('Private application configuration is unavailable.');
+        throw new RuntimeException('Contact service configuration is unavailable.');
     }
 
     $loaded = require $configPath;
     if (!is_array($loaded)) {
-        throw new RuntimeException('Private application configuration is invalid.');
+        throw new RuntimeException('Contact service configuration is invalid.');
     }
     $rateLimitSalt = $loaded['rate_limit']['salt'] ?? '';
     if (!is_string($rateLimitSalt) || strlen($rateLimitSalt) < 32 || strpos($rateLimitSalt, 'REPLACE_') === 0) {
@@ -30,39 +29,13 @@ function sc_config(): array
     return $config;
 }
 
-function sc_db(): PDO
-{
-    static $connection = null;
-    if ($connection instanceof PDO) {
-        return $connection;
-    }
-
-    $database = sc_config()['database'] ?? null;
-    if (!is_array($database) || empty($database['dsn']) || !isset($database['username'], $database['password'])) {
-        throw new RuntimeException('Database configuration is incomplete.');
-    }
-
-    $connection = new PDO(
-        (string) $database['dsn'],
-        (string) $database['username'],
-        (string) $database['password'],
-        [
-            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-            PDO::ATTR_EMULATE_PREPARES => false,
-        ]
-    );
-
-    return $connection;
-}
-
-function sc_start_session(): void
+function contact_start_session(): void
 {
     if (session_status() === PHP_SESSION_ACTIVE) {
         return;
     }
 
-    $session = sc_config()['session'] ?? [];
+    $session = contact_config()['session'] ?? [];
     $secure = isset($session['secure_cookie'])
         ? (bool) $session['secure_cookie']
         : (!empty($_SERVER['HTTPS']) && strtolower((string) $_SERVER['HTTPS']) !== 'off');
@@ -80,7 +53,7 @@ function sc_start_session(): void
     session_start();
 }
 
-function sc_csrf_token(): string
+function contact_csrf_token(): string
 {
     if (empty($_SESSION['sc_csrf_token']) || !is_string($_SESSION['sc_csrf_token'])) {
         $_SESSION['sc_csrf_token'] = bin2hex(random_bytes(32));
@@ -89,7 +62,7 @@ function sc_csrf_token(): string
     return $_SESSION['sc_csrf_token'];
 }
 
-function sc_verify_csrf(?string $provided): bool
+function contact_verify_csrf(?string $provided): bool
 {
     $expected = $_SESSION['sc_csrf_token'] ?? '';
     return is_string($provided)
@@ -98,10 +71,10 @@ function sc_verify_csrf(?string $provided): bool
         && hash_equals($expected, $provided);
 }
 
-function sc_origin_is_allowed(): bool
+function contact_origin_is_allowed(): bool
 {
     $origin = $_SERVER['HTTP_ORIGIN'] ?? '';
-    $allowedOrigins = sc_config()['allowed_origins'] ?? [];
+    $allowedOrigins = contact_config()['allowed_origins'] ?? [];
     if (!is_string($origin) || !is_array($allowedOrigins)) {
         return false;
     }
@@ -115,7 +88,7 @@ function sc_origin_is_allowed(): bool
     return false;
 }
 
-function sc_json_response(int $status, array $payload, array $headers = []): void
+function contact_json_response(int $status, array $payload, array $headers = []): void
 {
     http_response_code($status);
     header('Content-Type: application/json; charset=utf-8');
@@ -128,18 +101,10 @@ function sc_json_response(int $status, array $payload, array $headers = []): voi
     exit;
 }
 
-function sc_escape($value): string
+/** Keeps per-scope counters in the configured application storage. */
+function contact_consume_rate_limit(string $scope, int $limit, int $windowSeconds): ?array
 {
-    return htmlspecialchars((string) $value, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
-}
-
-/**
- * Adds a request to an IP-keyed rolling-window limit. Returns null if storage is unavailable.
- * The caller supplies a scope so login and contact submissions have separate counters.
- */
-function sc_consume_rate_limit(string $scope, int $limit, int $windowSeconds): ?array
-{
-    $rateConfig = sc_config()['rate_limit'] ?? [];
+    $rateConfig = contact_config()['rate_limit'] ?? [];
     $directory = $rateConfig['directory'] ?? '';
     $secret = $rateConfig['salt'] ?? '';
     if (!is_string($directory) || $directory === '' || !is_string($secret) || strlen($secret) < 32) {
@@ -222,30 +187,4 @@ function sc_consume_rate_limit(string $scope, int $limit, int $windowSeconds): ?
         flock($handle, LOCK_UN);
         fclose($handle);
     }
-}
-
-function sc_redirect(string $location, int $status = 303): void
-{
-    header('Location: ' . $location, true, $status);
-    exit;
-}
-
-function sc_safe_local_redirect($candidate, string $fallback): string
-{
-    if (!is_string($candidate) || $candidate === '' || strpbrk($candidate, "\r\n\\") !== false) {
-        return $fallback;
-    }
-
-    $parts = parse_url($candidate);
-    if ($parts === false || isset($parts['scheme']) || isset($parts['host']) || isset($parts['user']) || isset($parts['pass'])) {
-        return $fallback;
-    }
-    if (isset($parts['path']) && strpos((string) $parts['path'], '..') !== false) {
-        return $fallback;
-    }
-    if (substr($candidate, 0, 2) === '//') {
-        return $fallback;
-    }
-
-    return $candidate;
 }

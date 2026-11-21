@@ -1,21 +1,21 @@
 <?php
 declare(strict_types=1);
 
-require_once dirname(__DIR__) . '/private/bootstrap.php';
+require_once __DIR__ . '/contact-support.php';
 
 function contact_error(int $status, string $code, array $headers = []): void
 {
-    sc_json_response($status, ['ok' => false, 'code' => $code], $headers);
+    contact_json_response($status, ['ok' => false, 'code' => $code], $headers);
 }
 
 function contact_success(): void
 {
-    sc_json_response(200, ['ok' => true, 'code' => 'sent']);
+    contact_json_response(200, ['ok' => true, 'code' => 'sent']);
 }
 
 try {
-    $config = sc_config();
-    sc_start_session();
+    $config = contact_config();
+    contact_start_session();
 
     $method = $_SERVER['REQUEST_METHOD'] ?? 'GET';
     if ($method === 'GET') {
@@ -25,19 +25,19 @@ try {
             $_SESSION['sc_contact_started_at'] = time();
         }
 
-        sc_json_response(200, ['csrfToken' => sc_csrf_token()]);
+        contact_json_response(200, ['csrfToken' => contact_csrf_token()]);
     }
 
     if ($method !== 'POST') {
         contact_error(405, 'method_not_allowed', ['Allow' => 'GET, POST']);
     }
 
-    if (!sc_origin_is_allowed()) {
+    if (!contact_origin_is_allowed()) {
         contact_error(403, 'origin_rejected');
     }
 
     $csrfToken = $_SERVER['HTTP_X_CSRF_TOKEN'] ?? null;
-    if (!is_string($csrfToken) || !sc_verify_csrf($csrfToken)) {
+    if (!is_string($csrfToken) || !contact_verify_csrf($csrfToken)) {
         contact_error(403, 'csrf_invalid');
     }
 
@@ -57,7 +57,7 @@ try {
         contact_error(413, 'request_too_large');
     }
 
-    $rate = sc_consume_rate_limit('contact', 5, 900);
+    $rate = contact_consume_rate_limit('contact', 5, 900);
     if ($rate === null) {
         error_log('Contact form rate-limit storage is unavailable.');
         contact_error(503, 'service_unavailable');
