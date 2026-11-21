@@ -44,13 +44,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# Codex
-/tmp/
-/output/
-
 #google
 googlea7c98e5a36e23ffe.html
-
-#private workspace
-/public/private
-/public/workspace

@@ -12,12 +12,12 @@ export const projectAssets = {
   counterJavaScript: defineProjectAsset({
     image: "/images/projects/counter-javascript.svg",
     githubUrl: "https://github.com/dando90/counter",
-    demoUrl: "/projects/counter/index.html",
+    demoUrl: "/projects/counter/",
   }),
   bookFinder: defineProjectAsset({
     image: "/images/projects/book-finder.svg",
     githubUrl: "https://github.com/dando90/bookfinder",
-    demoUrl: "/projects/bookfinder/index.html",
+    demoUrl: "/projects/bookfinder/",
   }),
   phpRestApi: defineProjectAsset({
     image: "/images/projects/php-rest-api.svg",
@@ -26,11 +26,12 @@ export const projectAssets = {
   reactNyTimesClone: defineProjectAsset({
     image: "/images/projects/react-ny-times-clone.svg",
     githubUrl: "https://github.com/dando90/nytimesclone",
-    demoUrl: "/projects/nytimesclone/index.html",
+    demoUrl: "/projects/nytimesclone/",
   }),
   personalWebsiteV1: defineProjectAsset({
     image: "/images/projects/personal-website-v1.svg",
     githubUrl: "https://github.com/dando90/personal-website-v1",
+    demoUrl: "/projects/personal-website-v1/",
   }),
   personalWebsiteV2: defineProjectAsset({
     image: "/images/projects/personal-website-v2.svg",
