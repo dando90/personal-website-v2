@@ -5,8 +5,8 @@ export const aboutCopy = {
   "en": {
     "about": {
       "eyebrow": "ABOUT",
-      "title": "From industrial systems to software and applied AI.",
-      "description": "I’m a software developer with a degree in Electrical Engineering and hands-on experience building web applications. Earlier work in industrial commissioning and troubleshooting shaped my practical, systems-oriented approach. I’m now deepening my focus on AI-powered software, including LLM applications and retrieval-based systems.",
+      "title": "From electrical engineering to software and applied AI.",
+      "description": "My path combines an Electrical Engineering degree with hands-on work across industrial automation and web development. In the field, I commissioned and diagnosed production equipment, worked directly with customers across Italy and Spain, and coordinated complex issues with engineers in the UK. In software, I built web experiences and Moodle integrations with Next.js, Tailwind CSS and other web platforms. I’m now developing my focus on AI-powered applications, LLMs and retrieval systems, bringing the same practical, systems-oriented mindset to new problems.",
       "imageAlt": "Portrait of Stefano Chiabrando",
       "principlesTitle": "How I approach a problem",
       "principles": [
@@ -19,8 +19,8 @@ export const aboutCopy = {
   "it": {
     "about": {
       "eyebrow": "CHI SONO",
-      "title": "Dai sistemi industriali al software e all’AI applicata.",
-      "description": "Sono uno sviluppatore software, laureato in Ingegneria Elettrica, con esperienza pratica nella realizzazione di applicazioni web. Il precedente lavoro nel commissioning e nella diagnostica industriale ha rafforzato il mio approccio concreto e orientato ai sistemi. Ora sto approfondendo il software con AI, le applicazioni basate su LLM e i sistemi di retrieval.",
+      "title": "Dall’ingegneria elettrica al software e all’AI applicata.",
+      "description": "Il mio percorso unisce la laurea in Ingegneria Elettrica all’esperienza pratica nell’automazione industriale e nello sviluppo web. Sul campo ho seguito la messa in servizio e la diagnosi di impianti produttivi, lavorando a contatto con clienti in Italia e Spagna e coordinandomi con tecnici nel Regno Unito. Nel software ho realizzato esperienze web e integrazioni Moodle con Next.js, Tailwind CSS e altre piattaforme web. Oggi sto sviluppando il mio focus sulle applicazioni AI, sugli LLM e sui sistemi di retrieval, con lo stesso approccio concreto e orientato ai sistemi.",
       "imageAlt": "Ritratto di Stefano Chiabrando",
       "principlesTitle": "Come affronto un problema",
       "principles": [
@@ -33,8 +33,8 @@ export const aboutCopy = {
   "es": {
     "about": {
       "eyebrow": "SOBRE MÍ",
-      "title": "De los sistemas industriales al software y la IA aplicada.",
-      "description": "Soy desarrollador de software y graduado en Ingeniería Eléctrica, con experiencia práctica en aplicaciones web. Mi trabajo previo en puesta en marcha y diagnóstico industrial reforzó un enfoque práctico y orientado a sistemas. Ahora estoy profundizando en software con IA, aplicaciones basadas en LLM y sistemas de recuperación de información.",
+      "title": "De la ingeniería eléctrica al software y la IA aplicada.",
+      "description": "Mi trayectoria combina un grado en Ingeniería Eléctrica con experiencia práctica en automatización industrial y desarrollo web. En campo, participé en la puesta en marcha y el diagnóstico de equipos de producción, trabajé directamente con clientes de Italia y España y coordiné incidencias complejas con ingenieros del Reino Unido. En software, desarrollé experiencias web e integraciones con Moodle usando Next.js, Tailwind CSS y otras plataformas web. Ahora estoy ampliando mi enfoque hacia las aplicaciones de IA, los LLM y los sistemas de recuperación, con la misma perspectiva práctica y orientada a sistemas.",
       "imageAlt": "Retrato de Stefano Chiabrando",
       "principlesTitle": "Cómo abordo un problema",
       "principles": [

@@ -5,13 +5,13 @@ export const homeCopy = {
   "en": {
     "metadata": {
       "title": "Stefano Chiabrando — Software Engineering & Applied AI",
-      "description": "Software developer with a background in electrical engineering, web development and industrial systems, now focusing on applied AI, LLM applications and RAG."
+      "description": "Software developer with hands-on experience in web development and industrial systems, now building deeper expertise in AI applications, LLMs and retrieval systems."
     },
     "hero": {
       "areasLabel": "Areas of focus",
       "eyebrow": "SOFTWARE · AI · INTELLIGENT SYSTEMS",
-      "title": "Software engineering for practical AI.",
-      "description": "I build web applications and am expanding my work into LLMs, retrieval-augmented generation and applied AI.",
+      "title": "Software engineering for useful, intelligent applications.",
+      "description": "I build web software and bring an engineering background from industrial automation. I’m now developing my focus on AI applications, LLMs and retrieval systems.",
       "projects": "View projects",
       "about": "About me",
       "tags": [
@@ -51,13 +51,13 @@ export const homeCopy = {
   "it": {
     "metadata": {
       "title": "Stefano Chiabrando — Ingegneria del software e AI applicata",
-      "description": "Sviluppatore software con formazione in ingegneria elettrica ed esperienza nello sviluppo web e nei sistemi industriali; oggi con focus sull’AI applicata, gli LLM e il RAG."
+      "description": "Sviluppatore software con esperienza pratica nello sviluppo web e nei sistemi industriali; sto approfondendo applicazioni AI, LLM e sistemi di retrieval."
     },
     "hero": {
       "areasLabel": "Aree di interesse",
       "eyebrow": "SOFTWARE · AI · SISTEMI INTELLIGENTI",
-      "title": "Ingegneria del software per un’AI concreta.",
-      "description": "Sviluppo applicazioni web e sto approfondendo LLM, generazione aumentata dal recupero delle informazioni e AI applicata.",
+      "title": "Ingegneria del software per applicazioni intelligenti e utili.",
+      "description": "Sviluppo software web e porto con me una formazione ingegneristica maturata anche nell’automazione industriale. Ora sto approfondendo applicazioni AI, LLM e sistemi di retrieval.",
       "projects": "Vedi i progetti",
       "about": "Chi sono",
       "tags": [
@@ -97,13 +97,13 @@ export const homeCopy = {
   "es": {
     "metadata": {
       "title": "Stefano Chiabrando — Ingeniería de software e IA aplicada",
-      "description": "Desarrollador de software con formación en ingeniería eléctrica y experiencia en desarrollo web y sistemas industriales; ahora enfocado en IA aplicada, LLM y RAG."
+      "description": "Desarrollador de software con experiencia práctica en desarrollo web y sistemas industriales; estoy ampliando mis conocimientos en aplicaciones de IA, LLM y sistemas de recuperación."
     },
     "hero": {
       "areasLabel": "Áreas de enfoque",
       "eyebrow": "SOFTWARE · IA · SISTEMAS INTELIGENTES",
-      "title": "Ingeniería de software para una IA práctica.",
-      "description": "Desarrollo aplicaciones web y estoy ampliando mi experiencia en LLM, generación aumentada por recuperación e IA aplicada.",
+      "title": "Ingeniería de software para aplicaciones inteligentes y útiles.",
+      "description": "Desarrollo software web y aporto una formación en ingeniería aplicada también a la automatización industrial. Ahora estoy profundizando en aplicaciones de IA, LLM y sistemas de recuperación.",
       "projects": "Ver proyectos",
       "about": "Sobre mí",
       "tags": [

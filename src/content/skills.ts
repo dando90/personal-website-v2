@@ -21,7 +21,7 @@ export const skillsCopy = {
           ]
         },
         {
-          "title": "Applied AI",
+          "title": "Applied AI · developing focus",
           "items": [
             "LangChain",
             "LLM integration",
@@ -68,7 +68,7 @@ export const skillsCopy = {
           ]
         },
         {
-          "title": "AI applicata",
+          "title": "AI applicata · area in sviluppo",
           "items": [
             "LangChain",
             "Integrazione LLM",
@@ -115,7 +115,7 @@ export const skillsCopy = {
           ]
         },
         {
-          "title": "IA aplicada",
+          "title": "IA aplicada · enfoque en desarrollo",
           "items": [
             "LangChain",
             "Integración LLM",

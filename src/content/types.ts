@@ -55,11 +55,19 @@ export interface ExperienceContent {
   experience: {
     eyebrow: string;
     title: string;
+    detailsLabel: string;
     items: readonly {
       role: string;
       company: string;
       period: string;
       description: string;
+      details: readonly string[];
+    }[];
+    educationTitle: string;
+    education: readonly {
+      program: string;
+      institution?: string;
+      period?: string;
     }[];
   };
 }
