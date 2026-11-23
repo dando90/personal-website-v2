@@ -38,6 +38,11 @@ export const projectAssets = {
     image: "/images/projects/personal-website-v2.svg",
     githubUrl: "https://github.com/dando90/personal-website-v2",
   }),
+  hostList: defineProjectAsset({
+    image: "/images/projects/hostlist.svg",
+    githubUrl: "https://github.com/dando90/hostlist-local",
+    demoUrl: "/projects/hostlist-server/",
+  }),
 };
 
 export type ProjectId = keyof typeof projectAssets;

@@ -78,6 +78,18 @@ export const projectsCopy = {
             "TypeScript",
             "Tailwind CSS"
           ]
+        },
+        {
+          "id": "hostList",
+          "number": "07",
+          "title": "HostList",
+          "imageAlt": "Placeholder illustration of HostList, a local-first host directory and analysis tool",
+          "description": "A local-first directory for exploring host organisations, capturing profiles from the browser and reviewing deterministic or AI-assisted analyses.",
+          "tags": [
+            "Next.js",
+            "SQLite",
+            "AI analysis"
+          ]
         }
       ],
       "github": "Explore my GitHub repositories"
@@ -159,6 +171,18 @@ export const projectsCopy = {
             "TypeScript",
             "Tailwind CSS"
           ]
+        },
+        {
+          "id": "hostList",
+          "number": "07",
+          "title": "HostList",
+          "imageAlt": "Illustrazione segnaposto di HostList, uno strumento locale per consultare e analizzare organizzazioni ospitanti",
+          "description": "Una directory locale per esplorare organizzazioni ospitanti, acquisire profili dal browser e consultare analisi deterministiche o assistite dall’AI.",
+          "tags": [
+            "Next.js",
+            "SQLite",
+            "Analisi AI"
+          ]
         }
       ],
       "github": "Esplora i repository su GitHub"
@@ -239,6 +263,18 @@ export const projectsCopy = {
             "Next.js",
             "TypeScript",
             "Tailwind CSS"
+          ]
+        },
+        {
+          "id": "hostList",
+          "number": "07",
+          "title": "HostList",
+          "imageAlt": "Ilustración provisional de HostList, una herramienta local para explorar y analizar organizaciones anfitrionas",
+          "description": "Un directorio local para explorar organizaciones anfitrionas, capturar perfiles desde el navegador y consultar análisis deterministas o asistidos por IA.",
+          "tags": [
+            "Next.js",
+            "SQLite",
+            "Análisis de IA"
           ]
         }
       ],
