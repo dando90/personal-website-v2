@@ -16,10 +16,12 @@ export const projectsCopy = {
           "number": "01",
           "title": "Counter JavaScript",
           "imageAlt": "Placeholder artwork for the Counter JavaScript project",
-          "description": "A simple counter application built with JavaScript to practice the fundamentals of the language.",
+          "description": "A small responsive counter with controls generated dynamically in vanilla JavaScript to increment, decrement or reset the value.",
           "tags": [
-            "JavaScript",
-            "DOM Manipulation"
+            "HTML",
+            "CSS · Sass",
+            "Vanilla JavaScript",
+            "DOM"
           ]
         },
         {
@@ -27,9 +29,12 @@ export const projectsCopy = {
           "number": "02",
           "title": "Book Finder",
           "imageAlt": "Placeholder artwork for the Book Finder project",
-          "description": "A web application focused on searching for books.",
+          "description": "A JavaScript single-page app for finding books by subject, browsing paginated results and opening a fuller description for each title.",
           "tags": [
-            "Web Development"
+            "JavaScript",
+            "Sass",
+            "Webpack",
+            "Babel"
           ]
         },
         {
@@ -37,23 +42,25 @@ export const projectsCopy = {
           "number": "03",
           "title": "PHP REST API",
           "imageAlt": "Placeholder artwork for the PHP REST API project",
-          "description": "A backend project for building a REST API using PHP.",
+          "description": "A native PHP and MySQL REST API for managing courses and subjects through a many-to-many data model, with a browser playground for trying CRUD requests.",
           "tags": [
-            "PHP",
+            "PHP 8.4",
+            "MySQL · PDO",
             "REST API",
-            "Backend"
+            "CRUD"
           ]
         },
         {
           "id": "reactNyTimesClone",
           "number": "04",
-          "title": "React NY Times Clone",
+          "title": "React New York Times Clone",
           "imageAlt": "Placeholder artwork for the React NY Times Clone project",
-          "description": "A recreation of The New York Times website built with React.",
+          "description": "A React single-page application that fetches New York Times articles through its API and recreates the newspaper’s browsing experience.",
           "tags": [
             "React",
-            "JavaScript",
-            "Frontend"
+            "Context API",
+            "Axios",
+            "NYT API"
           ]
         },
         {
@@ -61,10 +68,12 @@ export const projectsCopy = {
           "number": "05",
           "title": "Personal Website v1",
           "imageAlt": "Placeholder artwork for the first version of my personal website",
-          "description": "The first version of my personal website, built before this portfolio.",
+          "description": "An earlier static, multi-page portfolio introducing my profile, skills and work. It uses locally hosted fonts, SVG assets and a rotating JavaScript introduction.",
           "tags": [
-            "Personal Website",
-            "Web Development"
+            "HTML5 · CSS3",
+            "Sass · SCSS",
+            "JavaScript",
+            "SVG"
           ]
         },
         {
@@ -72,11 +81,12 @@ export const projectsCopy = {
           "number": "06",
           "title": "Personal Website v2",
           "imageAlt": "Placeholder artwork for the source code of my current personal website",
-          "description": "The source code for this portfolio, built with Next.js, TypeScript and Tailwind CSS.",
+          "description": "The source of this multilingual portfolio, built with the Next.js App Router, TypeScript and Tailwind CSS 4, then exported as static pages in English, Italian and Spanish.",
           "tags": [
-            "Next.js",
+            "Next.js App Router",
             "TypeScript",
-            "Tailwind CSS"
+            "Tailwind CSS 4",
+            "Static export"
           ]
         },
         {
@@ -84,10 +94,11 @@ export const projectsCopy = {
           "number": "07",
           "title": "HostList",
           "imageAlt": "Placeholder illustration of HostList, a local-first host directory and analysis tool",
-          "description": "A local-first directory for exploring host organisations, capturing profiles from the browser and reviewing deterministic or AI-assisted analyses.",
+          "description": "A local-first host directory that stores profiles captured from a Firefox demo in SQLite and supports explainable deterministic or optional AI-assisted analysis.",
           "tags": [
             "Next.js",
             "SQLite",
+            "Firefox extension",
             "AI analysis"
           ]
         }
@@ -109,10 +120,12 @@ export const projectsCopy = {
           "number": "01",
           "title": "Counter JavaScript",
           "imageAlt": "Immagine segnaposto del progetto Counter JavaScript",
-          "description": "Una semplice applicazione contatore sviluppata con JavaScript per mettere in pratica i fondamenti del linguaggio.",
+          "description": "Un contatore responsive con controlli creati dinamicamente in JavaScript vanilla per aumentare, diminuire o azzerare il valore.",
           "tags": [
-            "JavaScript",
-            "DOM Manipulation"
+            "HTML",
+            "CSS · Sass",
+            "JavaScript vanilla",
+            "DOM"
           ]
         },
         {
@@ -120,9 +133,12 @@ export const projectsCopy = {
           "number": "02",
           "title": "Book Finder",
           "imageAlt": "Immagine segnaposto del progetto Book Finder",
-          "description": "Un'applicazione web dedicata alla ricerca di libri.",
+          "description": "Una single-page app JavaScript per cercare libri per argomento, consultare risultati paginati e aprire una descrizione più completa di ogni titolo.",
           "tags": [
-            "Web Development"
+            "JavaScript",
+            "Sass",
+            "Webpack",
+            "Babel"
           ]
         },
         {
@@ -130,23 +146,25 @@ export const projectsCopy = {
           "number": "03",
           "title": "PHP REST API",
           "imageAlt": "Immagine segnaposto del progetto PHP REST API",
-          "description": "Un progetto backend per la creazione di un'API REST utilizzando PHP.",
+          "description": "Un’API REST in PHP nativo e MySQL per gestire corsi e materie con una relazione molti-a-molti, accompagnata da un playground browser per provare le operazioni CRUD.",
           "tags": [
-            "PHP",
+            "PHP 8.4",
+            "MySQL · PDO",
             "REST API",
-            "Backend"
+            "CRUD"
           ]
         },
         {
           "id": "reactNyTimesClone",
           "number": "04",
-          "title": "React NY Times Clone",
+          "title": "React New York Times Clone",
           "imageAlt": "Immagine segnaposto del progetto React NY Times Clone",
-          "description": "Una riproduzione del sito The New York Times realizzata utilizzando React.",
+          "description": "Una single-page app React che recupera articoli tramite l’API del New York Times e ricrea l’esperienza di navigazione del quotidiano.",
           "tags": [
             "React",
-            "JavaScript",
-            "Frontend"
+            "Context API",
+            "Axios",
+            "NYT API"
           ]
         },
         {
@@ -154,10 +172,12 @@ export const projectsCopy = {
           "number": "05",
           "title": "Personal Website v1",
           "imageAlt": "Immagine segnaposto della prima versione del mio sito personale",
-          "description": "La prima versione del mio sito personale, realizzata prima di questo portfolio.",
+          "description": "Una precedente versione statica e multipagina del mio portfolio, con profilo, competenze e lavori. Include font ospitati in locale, asset SVG e un’introduzione JavaScript a rotazione.",
           "tags": [
-            "Sito personale",
-            "Sviluppo web"
+            "HTML5 · CSS3",
+            "Sass · SCSS",
+            "JavaScript",
+            "SVG"
           ]
         },
         {
@@ -165,11 +185,12 @@ export const projectsCopy = {
           "number": "06",
           "title": "Personal Website v2",
           "imageAlt": "Immagine segnaposto del codice sorgente del mio sito personale attuale",
-          "description": "Il codice sorgente di questo portfolio, realizzato con Next.js, TypeScript e Tailwind CSS.",
+          "description": "Il codice sorgente di questo portfolio multilingue, sviluppato con Next.js App Router, TypeScript e Tailwind CSS 4 ed esportato come pagine statiche in inglese, italiano e spagnolo.",
           "tags": [
-            "Next.js",
+            "Next.js App Router",
             "TypeScript",
-            "Tailwind CSS"
+            "Tailwind CSS 4",
+            "Export statico"
           ]
         },
         {
@@ -177,10 +198,11 @@ export const projectsCopy = {
           "number": "07",
           "title": "HostList",
           "imageAlt": "Illustrazione segnaposto di HostList, uno strumento locale per consultare e analizzare organizzazioni ospitanti",
-          "description": "Una directory locale per esplorare organizzazioni ospitanti, acquisire profili dal browser e consultare analisi deterministiche o assistite dall’AI.",
+          "description": "Una directory locale di organizzazioni ospitanti che salva in SQLite i profili acquisiti da una demo con Firefox e permette di analizzarli con metodi deterministici o AI opzionale.",
           "tags": [
             "Next.js",
             "SQLite",
+            "Estensione Firefox",
             "Analisi AI"
           ]
         }
@@ -202,10 +224,12 @@ export const projectsCopy = {
           "number": "01",
           "title": "Counter JavaScript",
           "imageAlt": "Imagen provisional del proyecto Counter JavaScript",
-          "description": "Una sencilla aplicación de contador desarrollada con JavaScript para poner en práctica los fundamentos del lenguaje.",
+          "description": "Un contador responsive con controles generados dinámicamente en JavaScript vanilla para incrementar, reducir o reiniciar el valor.",
           "tags": [
-            "JavaScript",
-            "Manipulación del DOM"
+            "HTML",
+            "CSS · Sass",
+            "JavaScript vanilla",
+            "DOM"
           ]
         },
         {
@@ -213,9 +237,12 @@ export const projectsCopy = {
           "number": "02",
           "title": "Book Finder",
           "imageAlt": "Imagen provisional del proyecto Book Finder",
-          "description": "Una aplicación web centrada en la búsqueda de libros.",
+          "description": "Una aplicación JavaScript de una sola página para buscar libros por tema, recorrer resultados paginados y abrir una descripción más completa de cada título.",
           "tags": [
-            "Desarrollo web"
+            "JavaScript",
+            "Sass",
+            "Webpack",
+            "Babel"
           ]
         },
         {
@@ -223,23 +250,25 @@ export const projectsCopy = {
           "number": "03",
           "title": "PHP REST API",
           "imageAlt": "Imagen provisional del proyecto PHP REST API",
-          "description": "Un proyecto backend para crear una API REST utilizando PHP.",
+          "description": "Una API REST con PHP nativo y MySQL para gestionar cursos y asignaturas mediante una relación muchos-a-muchos, con un playground web para probar operaciones CRUD.",
           "tags": [
-            "PHP",
+            "PHP 8.4",
+            "MySQL · PDO",
             "REST API",
-            "Backend"
+            "CRUD"
           ]
         },
         {
           "id": "reactNyTimesClone",
           "number": "04",
-          "title": "React NY Times Clone",
+          "title": "React New York Times Clone",
           "imageAlt": "Imagen provisional del proyecto React NY Times Clone",
-          "description": "Una recreación del sitio web The New York Times desarrollada con React.",
+          "description": "Una aplicación React de una sola página que obtiene artículos mediante la API de The New York Times y recrea la experiencia de navegación del periódico.",
           "tags": [
             "React",
-            "JavaScript",
-            "Frontend"
+            "Context API",
+            "Axios",
+            "API de NYT"
           ]
         },
         {
@@ -247,10 +276,12 @@ export const projectsCopy = {
           "number": "05",
           "title": "Personal Website v1",
           "imageAlt": "Imagen provisional de la primera versión de mi sitio personal",
-          "description": "La primera versión de mi sitio personal, creada antes de este portfolio.",
+          "description": "Una versión anterior, estática y multipágina de mi portfolio, con perfil, habilidades y trabajos. Incluye fuentes locales, recursos SVG y una introducción JavaScript rotativa.",
           "tags": [
-            "Sitio personal",
-            "Desarrollo web"
+            "HTML5 · CSS3",
+            "Sass · SCSS",
+            "JavaScript",
+            "SVG"
           ]
         },
         {
@@ -258,11 +289,12 @@ export const projectsCopy = {
           "number": "06",
           "title": "Personal Website v2",
           "imageAlt": "Imagen provisional del código fuente de mi sitio personal actual",
-          "description": "El código fuente de este portfolio, desarrollado con Next.js, TypeScript y Tailwind CSS.",
+          "description": "El código de este portfolio multilingüe, desarrollado con Next.js App Router, TypeScript y Tailwind CSS 4 y exportado como páginas estáticas en inglés, italiano y español.",
           "tags": [
-            "Next.js",
+            "Next.js App Router",
             "TypeScript",
-            "Tailwind CSS"
+            "Tailwind CSS 4",
+            "Exportación estática"
           ]
         },
         {
@@ -270,10 +302,11 @@ export const projectsCopy = {
           "number": "07",
           "title": "HostList",
           "imageAlt": "Ilustración provisional de HostList, una herramienta local para explorar y analizar organizaciones anfitrionas",
-          "description": "Un directorio local para explorar organizaciones anfitrionas, capturar perfiles desde el navegador y consultar análisis deterministas o asistidos por IA.",
+          "description": "Un directorio local de organizaciones anfitrionas que guarda en SQLite perfiles capturados desde una demo con Firefox y permite analizarlos con métodos deterministas o IA opcional.",
           "tags": [
             "Next.js",
             "SQLite",
+            "Extensión Firefox",
             "Análisis de IA"
           ]
         }
