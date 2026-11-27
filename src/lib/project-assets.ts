@@ -38,6 +38,10 @@ export const projectAssets = {
     image: "/images/projects/personal-website-v2.svg",
     githubUrl: "https://github.com/dando90/personal-website-v2",
   }),
+  driveSync: defineProjectAsset({
+    image: "/images/projects/drivesync.svg",
+    githubUrl: "https://github.com/dando90/drive-sync",
+  }),
   hostList: defineProjectAsset({
     image: "/images/projects/hostlist.svg",
     githubUrl: "https://github.com/dando90/hostlist-local",

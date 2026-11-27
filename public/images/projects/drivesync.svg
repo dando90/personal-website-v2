@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img">
+  <rect width="1600" height="1000" fill="#f7f8fa"/>
+  <circle cx="1370" cy="150" r="240" fill="#dbeafe"/>
+  <circle cx="210" cy="845" r="210" fill="#cffafe"/>
+  <rect x="210" y="115" width="1180" height="700" rx="32" fill="#fff" stroke="#dce3ec" stroke-width="8"/>
+  <rect x="210" y="115" width="1180" height="104" rx="32" fill="#101b2d"/>
+  <path d="M210 187h1180v32H210z" fill="#101b2d"/>
+  <rect x="260" y="150" width="42" height="42" rx="12" fill="#93c5fd"/>
+  <text x="281" y="180" text-anchor="middle" fill="#17375c" font-family="Arial,sans-serif" font-size="27" font-weight="700">D</text>
+  <text x="325" y="181" fill="#f8fafc" font-family="Arial,sans-serif" font-size="30" font-weight="700">DriveSync</text>
+  <rect x="300" y="280" width="255" height="416" rx="38" fill="#101b2d"/>
+  <rect x="316" y="298" width="223" height="380" rx="26" fill="#f8fafc"/>
+  <rect x="388" y="310" width="79" height="10" rx="5" fill="#cbd5e1"/>
+  <rect x="342" y="356" width="171" height="86" rx="15" fill="#dbeafe"/>
+  <path d="M365 380h40l12 12h57v31H365z" fill="#2563eb"/>
+  <rect x="343" y="471" width="142" height="13" rx="6" fill="#64748b"/>
+  <rect x="343" y="506" width="165" height="12" rx="6" fill="#cbd5e1"/>
+  <rect x="343" y="538" width="135" height="12" rx="6" fill="#cbd5e1"/>
+  <rect x="343" y="583" width="105" height="32" rx="16" fill="#dbeafe"/>
+  <path d="M670 405h210m-42-42 42 42-42 42" fill="none" stroke="#2563eb" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M880 563H670m42-42-42 42 42 42" fill="none" stroke="#06b6d4" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="976" y="316" width="307" height="322" rx="30" fill="#f7f8fa" stroke="#dce3ec" stroke-width="5"/>
+  <path d="M1050 487c-40 0-65-24-65-58 0-31 22-56 53-60 12-49 54-80 104-80 60 0 106 42 111 99 33 5 54 27 54 55 0 26-21 44-53 44z" fill="#dbeafe" transform="translate(-34 69) scale(.96)"/>
+  <path d="M1061 499h48l14 14h75v40h-137z" fill="#2563eb"/>
+  <rect x="1032" y="587" width="195" height="12" rx="6" fill="#cbd5e1"/>
+  <text x="800" y="908" text-anchor="middle" fill="#64748b" font-family="Arial,sans-serif" font-size="30" letter-spacing="4">DRIVESYNC · FOLDER SYNCHRONIZATION</text>
+</svg>

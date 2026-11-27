@@ -101,6 +101,19 @@ export const projectsCopy = {
             "Firefox extension",
             "AI analysis"
           ]
+        },
+        {
+          "id": "driveSync",
+          "number": "08",
+          "title": "DriveSync",
+          "imageAlt": "Illustration of a phone and cloud connected by synchronization arrows",
+          "description": "An experimental Flutter app for syncing Android folders with Google Drive, with folder selection, sync previews and manual uploads.",
+          "tags": [
+            "Flutter",
+            "Android",
+            "Google Drive API",
+            "SQLite"
+          ]
         }
       ],
       "github": "Explore my GitHub repositories"
@@ -205,6 +218,19 @@ export const projectsCopy = {
             "Estensione Firefox",
             "Analisi AI"
           ]
+        },
+        {
+          "id": "driveSync",
+          "number": "08",
+          "title": "DriveSync",
+          "imageAlt": "Illustrazione di un telefono e un cloud collegati da frecce di sincronizzazione",
+          "description": "Applicazione Flutter sperimentale per sincronizzare cartelle Android con Google Drive, con selezione delle cartelle, anteprima e caricamenti manuali.",
+          "tags": [
+            "Flutter",
+            "Android",
+            "Google Drive API",
+            "SQLite"
+          ]
         }
       ],
       "github": "Esplora i repository su GitHub"
@@ -308,6 +334,19 @@ export const projectsCopy = {
             "SQLite",
             "Extensión Firefox",
             "Análisis de IA"
+          ]
+        },
+        {
+          "id": "driveSync",
+          "number": "08",
+          "title": "DriveSync",
+          "imageAlt": "Ilustración de un teléfono y una nube conectados por flechas de sincronización",
+          "description": "Una app Flutter experimental para sincronizar carpetas Android con Google Drive, con selección de carpetas, vista previa y cargas manuales.",
+          "tags": [
+            "Flutter",
+            "Android",
+            "Google Drive API",
+            "SQLite"
           ]
         }
       ],
